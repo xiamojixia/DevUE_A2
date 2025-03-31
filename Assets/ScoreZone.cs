@@ -8,11 +8,6 @@ public class ScoreZone : MonoBehaviour
     private void Start()
     {
         gameManager = FindObjectOfType<GameManager>();
-
-        if (gameManager == null)
-        {
-            Debug.LogError("GameManager 未找到，请确保场景中存在 GameManager 脚本！");
-        }
     }
 
     private void OnCollisionEnter(Collision collision)
